@@ -88,7 +88,8 @@ Ardından:
 Notlar:
 
 - Derleme tüm platformları dener. macOS ve Android imza anahtarı gerektirdiği için hata verebilir. Windows çıktısı bundan etkilenmez.
-- Nightly iş akışı her gece kendiliğinden çalışacak şekilde ayarlı. İstemiyorsan Actions'ta iş akışını devre dışı bırak.
+- Nightly iş akışı sadece elle başlatıldığında çalışır, her gece kendiliğinden çalışmaz.
+- Koddaki her gönderim (push) "CI" ve "Full Flutter CI" testlerini başlatır. Bunlar kurulum dosyası üretmez. İstersen Actions'ta iptal edebilir ya da commit mesajına `[skip ci]` ekleyebilirsin.
 - Depo herkese açıksa Actions dakikaları ücretsizdir. Özel depoda Windows dakikaları kotadan iki kat düşer.
 - **MSI paketini kullanma.** MSI kendi adlandırmasını kullanır ve "RustDesk" olarak kalır. `.exe` kurulum dosyası doğru şekilde SamDesk olarak kurulur.
 
